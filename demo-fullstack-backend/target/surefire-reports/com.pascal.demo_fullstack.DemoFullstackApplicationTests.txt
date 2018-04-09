@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.pascal.demo_fullstack.DemoFullstackApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.211 s - in com.pascal.demo_fullstack.DemoFullstackApplicationTests

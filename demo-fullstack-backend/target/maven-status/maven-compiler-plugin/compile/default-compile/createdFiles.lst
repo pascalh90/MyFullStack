@@ -1,8 +1,0 @@
-com/pascal/demo_fullstack/repository/DatabaseLoader.class
-com/pascal/demo_fullstack/controller/ProductController.class
-com/pascal/demo_fullstack/service/ProductService.class
-com/pascal/demo_fullstack/model/Product.class
-com/pascal/demo_fullstack/service/ProductServiceImpl.class
-com/pascal/demo_fullstack/config/SwaggerConfig.class
-com/pascal/demo_fullstack/DemoFullstackApplication.class
-com/pascal/demo_fullstack/repository/ProductRepository.class

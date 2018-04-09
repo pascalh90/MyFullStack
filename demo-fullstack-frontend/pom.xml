@@ -9,7 +9,6 @@
 	<artifactId>demo-fullstack-frontend</artifactId>
 	<packaging>jar</packaging>
 
-
 	<build>
 		<resources>
 			<resource>
@@ -61,19 +60,20 @@
 							<arguments>build</arguments>
 						</configuration>
 					</execution>
-<!-- 					<execution> -->
-<!-- 						<id>yarn test</id> -->
-<!-- 						<goals> -->
-<!-- 							<goal>yarn</goal> -->
-<!-- 						</goals> -->
-<!-- 						<phase>test</phase> -->
-<!-- 						<configuration> -->
-<!-- 							<arguments>test watch false</arguments> -->
-<!-- 							<failOnError>true</failOnError> -->
-<!-- 						</configuration> -->
-<!-- 					</execution> -->
+					<!-- <execution> -->
+					<!-- <id>yarn test</id> -->
+					<!-- <goals> -->
+					<!-- <goal>yarn</goal> -->
+					<!-- </goals> -->
+					<!-- <phase>test</phase> -->
+					<!-- <configuration> -->
+					<!-- <arguments>test watch false</arguments> -->
+					<!-- <failOnError>true</failOnError> -->
+					<!-- </configuration> -->
+					<!-- </execution> -->
 				</executions>
 			</plugin>
+			
 		</plugins>
 	</build>
 </project>
