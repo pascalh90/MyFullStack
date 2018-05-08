@@ -45,5 +45,10 @@ public class ProductServiceImpl implements ProductService {
 	public String getProductNameById(Long id) {
 		return productRepository.findById(id).get().getProductName();
 	}
+
+	@Override
+	public Product getProductById(Long id) {
+		return productRepository.findById(id).get();
+	}
 	
 }

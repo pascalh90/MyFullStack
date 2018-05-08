@@ -3,7 +3,6 @@ import {ProductService} from './product.service';
 import {IProduct} from './products';
 import {Component, OnInit} from '@angular/core';
 @Component({
-  selector: 'app-products',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })

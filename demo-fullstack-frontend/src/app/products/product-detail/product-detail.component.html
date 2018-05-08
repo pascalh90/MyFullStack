@@ -1,0 +1,47 @@
+<div class="card card-primary" *ngIf="product">
+  <div class="card-header">
+    {{pageTitle+ ':' +product.productName}}
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Property</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>{{product.productName}}</td>
+        </tr>
+        <tr>
+          <td>Code</td>
+          <td>{{product.productCode}}</td>
+        </tr>
+        <tr>
+          <td>Release Date</td>
+          <td>{{product.releaseDate}}</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>{{product.price | currency:'EUR': true: '1.2-2'}}</td>
+        </tr>
+        <tr>
+          <td>Description</td>
+          <td>{{product.description}}</td>
+        </tr>
+        <tr>
+          <td>Rating</td>
+          <td>
+            <app-star [rating]='product.starRating' (ratingClicked)='onRatingClicked($event)'></app-star>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="card-footer">
+    <a class="btn btn-primary" (click)='onBack()' role="button">Back</a>
+  </div>
+</div>

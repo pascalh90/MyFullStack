@@ -7,11 +7,18 @@ import 'rxjs/add/operator/do';
 
 @Injectable()
 export class ProductService {
-    private _productUrl = 'http://localhost:8080/api/product/product/getAll';
+    private _productUrl = 'http://localhost:8080/api/products/all';
+    private _productByIdUrl = 'http://localhost:8080/api/products/product?id=';
     constructor(private _http: HttpClient) { }
 
     getProducts(): Observable<IProduct[]> {
         return this._http.get<IProduct[]>(this._productUrl)
+            .do(data => console.log('All: ' + JSON.stringify(data)))
+            .catch(this.handleError);
+    }
+
+    getProductById(id: number): Observable<IProduct> {
+        return this._http.get<IProduct>(this._productByIdUrl+id)
             .do(data => console.log('All: ' + JSON.stringify(data)))
             .catch(this.handleError);
     }

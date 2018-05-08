@@ -33,7 +33,7 @@ public class ProductController {
 	}
 	
 	@ApiOperation(value = "getAll", notes = "getAll", response = String.class)
-	@RequestMapping(value = "/product/getAll", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
+	@RequestMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
 	@ResponseBody
 	public  List<Product> getAllProducts() {
 		return productService.getAllProducts();
@@ -53,4 +53,13 @@ public class ProductController {
 	public void deleteProduct(@RequestParam(value="id") Long id) {
 		productService.deleteById(id);
 	}	
+	
+	@ApiOperation(value = "getProductById", notes = "getProductById", response = String.class)
+	@RequestMapping(value = "/product", produces = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.GET)
+	@ResponseBody
+	public Product getProductById(@RequestParam(value="id") Long id) {
+		return productService.getProductById(id);
+	}
+	
+	
 }

@@ -14,4 +14,6 @@ public interface ProductService {
 
 	public String getProductNameById(Long id);
 
+	public Product getProductById(Long id);
+
 }
